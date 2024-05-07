@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <title>Contacto</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="./estilo.css">
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h2 class="logo">Crème et Crème</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801;
+        </label>
+        <nav class="menu">
+            <a href="#">Incio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Mapa</a>
+            <label for="check" class="esconder-menu">
+                &#215;
+            </label>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- BANNER -->
+        <section class="banner-contacto">
+            <!-- TITULO DEL BANNER -->
+            <div>
+                <h2>Contactanos</h2>
+            </div>
+            <!-- LINK DEL BANNER QUE LLEVA A INICIO -->
+            <div class="links-contacto-banner">
+                <b><a href="./index.html" style="color: #df121c;text-decoration: none;">Inicio</a></b>
+                <span style="color: white;">/</span>
+                <span style="color: white;">Contacto</span>
+            </div>
+        </section>
+        <!-- FORMULARIO -->
+        <section id="formulario-contacto">
+            <!-- TITULO DEL FORMULARIO -->
+            <h3>¡Escribinos!</h3>
+            <div class="sugerencia">
+                <p>para darnos sugerencias o compartir tu experiencia</p>
+            </div>
+
+            <!-- FORMULARIO EN SI -->
+            <form action="bottiglieriahhmm@gmail.com" method="get" class="form" id="formulario">
+                <!-- PRIMERA PARTE CON SUS CUATRO INPUTS -->
+                <div class="form-primparte">
+                    <span class="cuadrito-contacto">
+                        <!-- NOMBRE -->
+                        <input type="text" id="nombre" name="nombre" placeholder="  Ingresa tu Nombre">
+                    </span>
+
+                    <span class="cuadrito-contacto">
+                        <!-- EMAIL -->
+                        <input type="email" id="email" name="email" placeholder="  Ingresa tu Email">
+                    </span>
+
+                    <span class="cuadrito-contacto">
+                        <!-- TELEFONO -->
+                        <input type="text" id="telefono" name="telefono" placeholder="  Ingresa tu Celular">
+                    </span>
+
+                    <span class="cuadrito-contacto">
+                        <!-- BARRIO -->
+                        <input type="text" id="barrio" name="barrio" placeholder="  Ingresa tu Barrio">
+                    </span>
+
+                </div>
+                <br>
+                <!-- MOTIVO DE CONTACTO CON MENU DESPLEGABLE -->
+                <div class="motivo-contacto">
+                    <label for="motivo">Motivo de Contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="">Selecciona un Motivo</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="comentario">Comentario</option>
+
+                    </select>
+                </div>
+                <br>
+                <!-- COMO NOS CONOCES USANDO CHECKBOS -->
+                <div class="como-encontrar">
+                    <label><b>¿Cómo nos encontraste?</b></label><br>
+                    <input type="checkbox" class="busqueda" name="busqueda" value="busqueda"> Búsqueda en
+                    Internet<br>
+                    <input type="checkbox" class="busqueda" name="redes" value="redes"> Redes Sociales<br>
+                    <input type="checkbox" class="busqueda" name="referencia" value="referencia"> Referencia de
+                    un
+                    amigo
+                </div>
+                <br>
+
+                <!-- AREA DE TEXTO PARA DESARROLLAR LA CONSULTA -->
+                <div class="text-area">
+                    <textarea name="consulta" id="mensaje" cols="67" rows="10"
+                        placeholder=" Escribe tu Consulta..."></textarea>
+                </div>
+                <br>
+                <!-- RECAPTCHA DE GOOGLE -->
+                <div class="captcha">
+                    <div class="g-recaptcha" data-sitekey="6Lf6fr0pAAAAAJ-mFUBjFR3jaf-VFazX1c8lGeB-"
+                        style="margin:auto; max-width:305px;"></div>
+                </div>
+                <br>
+                <!-- BOTON ENVIAR -->
+                <div>
+                    <button class="boton-enviar" type="submit" onclick=" return validateForm()">Enviar
+                        Datos</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h1 style="text-align: center;background-color: blueviolet;">ACA VA EL FOOTER</h1>
+    </footer>
+
+    <script src="./vali.js"></script>
+
+</body>
+
+</html>
