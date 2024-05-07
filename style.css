@@ -95,6 +95,10 @@ header{
 }
 
 /* Comentarios */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 56cc5d377a534bfde0fe5e69990df424248bff8a
 #comentarios{
     padding: 50px 50px;
     display: flex;
@@ -189,4 +193,8 @@ header{
     #comentarios{
         flex-direction: column;
     }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 56cc5d377a534bfde0fe5e69990df424248bff8a
