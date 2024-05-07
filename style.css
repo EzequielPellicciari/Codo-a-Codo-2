@@ -189,7 +189,7 @@ header{
     #comentarios{
         flex-direction: column;
     }
-
+    /* CSS AGUS*/
     * {
         font-family: "MuseoModerno", sans-serif;
         font-optical-sizing: auto;
